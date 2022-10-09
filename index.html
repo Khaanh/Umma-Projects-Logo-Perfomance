@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 	<!-- styles -->
 	<link rel="stylesheet" href="css/main.min.css">
@@ -30,42 +31,38 @@
   <div class="wrapper">
     <main class="main-page">
       <div class="overlay"></div>
-      <!-- //= layout/_header.html -->
 
-      <div class="main-holder none">
-        <div class="main-block">
-          <a href="#" class="main-block__link" target="_blank">
-            <img src="./img/decor-elem.svg" alt="decor element" class="main-block__decor">
-            <img src="./img/main-logo.png" alt="Umma logo" class="main-block__logo">
-          </a>
-        </div>
+      <div class="main-holder">
+        <ul class="list" id="sliderList">
 
-        <!-- circle-xs -->
-        <ul class="circle circle--xl" id="marquee-main">
-          <li class="circle__items" data-src="./img/logo-muslim-IT-community.png" data-ref="https://ummaprojects.com/4"
+          <li class="list__items" data-src="./img/logo-muslim-IT-community.png" data-ref="https://t.me/itmuslim"
             data-title="Muslim IT Community">
-            <div class="circle__info">
+            <div class="list__info">
               Группа IT специалистов-мусульман для взаимопомощи в вопросах, касающихся информационных технологий.
-            </div>
-            <i class="circle__img">
-              <img src="./img/logo-muslim-IT-community.png" alt="Muslim IT Community" width="61" height="61">
-            </i>
+              <i class="list__img">
+                <img src="./img/logo-muslim-IT-community.png" alt="Muslim IT Community" width="61" height="61">
+              </i>
           </li>
-          <li class="circle__items circle__items--bg" data-src="./img/logo-UltaVPN.png"
-            data-ref="https://ummaprojects.com/4" data-title="UltaVPN">
-            <div class="circle__info">
+
+          <li class="list__items list__items--bg" data-src="./img/logo-UltaVPN.png" data-ref="https://ultavpn.com"
+            data-title="UltaVPN">
+            <div class="list__info">
               UltaVPN - это ваш надёжный VPN клиент, с которым вы сможете ощутить всю полноту свободы в Интернете.
               Простой в обращении, удобный и безотказный сервис UltaVPN поможет вам серфить в глобальной сети без
-              рисков. Мы предлагаем вам установить его на мобильные платформы iOS или Android и защитить свой девайс на
-              все 100%!
+              рисков.
+              Мы предлагаем вам установить его на мобильные платформы iOS или Android и защитить свой девайс на все
+              100%!
             </div>
-            <i class="circle__img">
+            <i class="list__img list__img--bg-dark">
               <img src="./img/logo-UltaVPN.png" alt="UltaVPN logo" width="31" height="36">
             </i>
           </li>
-          <li class="circle__items" data-src="./img/logo-Al-Fatiha.png" data-ref="https://ummaprojects.com/4"
+
+          <li class="list__items" data-src="./img/logo-Al-Fatiha.png" data-ref="https://t.me/umm_alkitab_bot"
             data-title="Аль-Фатиха — прочитай её правильно!">
-            <div class="circle__info">
+            <div class="list__info">
+              «Аль-Фатиха — прочитай её правильно!» (Telegram бот)
+
               Чтение суры "аль-Фатиха" с грубыми ошибками может сделать молитву недействительной. Проблема неправильного
               произношения особенно актуальна для неарабоговорящих мусульман.
 
@@ -74,226 +71,147 @@
               Отправьте аудиозапись с вашим прочтением в бот и наши преподаватели помогут вам увидеть и исправить
               ошибки.
               Бесплатно!
+
             </div>
-            <i class="circle__img">
+            <i class="list__img">
               <img src="./img/logo-Al-Fatiha.png" alt="Al Fatiha logo" width="61" height="61">
             </i>
           </li>
-          <li class="circle__items" data-src="./img/logo-umma-pic.png" data-ref="https://ummaprojects.com/4"
+
+          <li class="list__items" data-src="./img/logo-umma-pic.png" data-ref="https://t.me/UmmaInPictures"
             data-title="Умма в картинках">
-            <div class="circle__info">
+            <div class="list__info">
               Серьёзные проблемы нашей Уммы в авторских иллюстрациях.
-              Получай эстетическое удовольствие, пользу и напоминания вместе с нами
+              Получай эстетическое удовольствие, пользу и напоминания вместе с нами.
             </div>
-            <i class="circle__img">
+            <i class="list__img">
               <img src="./img/logo-umma-pic.png" alt="Umma in picture logo" width="61" height="61">
             </i>
           </li>
-          <li class="circle__items" data-src="./img/logo-Muslim-cartoon.png" data-ref="https://ummaprojects.com/4"
+
+          <li class="list__items" data-src="./img/logo-Muslim-cartoon.png" data-ref="https://t.me/muslimults"
             data-title="Исламские мультики">
-            <div class="circle__info">
+            <div class="list__info">
               Самый большой сборник исламских мультфильмов на русском языке.
             </div>
-            <i class="circle__img">
+            <i class="list__img">
               <img src="./img/logo-Muslim-cartoon.png" alt="Muslim cartoon" width="61" height="61">
             </i>
           </li>
-          <li class="new-circle">
 
-            <ul class="circle circle--l" id="">
-              <li class="circle__items" data-src="./img/logo-how-i-accept.png" data-ref="https://ummaprojects.com/4"
-                data-title="UMMA STUDIO">
-                <div class="circle__info">
-                  Видео продакшн студия UMMA STUDIO.
-                </div>
-                <i class="circle__img">
-                  <img src="./img/logo-how-i-accept.png" alt="How i accept Muslim logo" width="61" height="61">
-                </i>
-              </li>
-              <li class="circle__items" data-src="./img/logo-Umma-Studio.png" data-ref="https://ummaprojects.com/7"
-                data-title="UMMA STUDIO">
-                <div class="circle__info">
-                  <a href="" class="circle__link"></a>
-                </div>
-                <i class="circle__img">
-                  <img src="./img/logo-Umma-Studio.png" alt="Umma Studio logo" width="61" height="61">
-                </i>
-              </li>
-              <li class="circle__items" data-src="./img/logo-creater.png" data-ref="https://ummaprojects.com/6"
-                data-title="Создания Аллаха">
-                <div class="circle__info">
-                  Вы знали, что альбатрос может спать прямо в полёте? Мы познакомим тебя с богатым миром животных и
-                  расскажем удивительные факты о них.
-                </div>
-                <i class="circle__img">
-                  <img src="./img/logo-creater.png" alt="Creater logo" width="61" height="61">
-                </i>
-              </li>
-              <li class="circle__items" data-src="./img/logo-Crypto-Halal.png"
-                data-ref="https://academy.cryptohalal.ru/" data-title="Crypto Halal">
-                <div class="circle__info">
-                  Академия CRYPTO HALAL обучает мусульман: р2р, арбитражу, скальпингу, смарт мани трейдингу; финансовой
-                  грамотности - детей/подростков.
-                </div>
-                <i class="circle__img">
-                  <img src="./img/logo-Crypto-Halal.png" alt="Crypto Halal logo" width="40" height="41">
-                </i>
-              </li>
-
-              <li class="new-circle">
-                <ul class="circle circle--m" id="mobile-row">
-                  <li class="circle__items" data-src="./img/logo-Crypto-Halal.png" data-ref="https://ummaprojects.com/4"
-                    data-title="Crypto Halal">
-                    <div class="circle__info">
-                      <a href="" class="circle__link"></a>
-                    </div>
-                    <i class="circle__img">
-                      <img src="./img/logo-Crypto-Halal.png" alt="Crypto Halal logo" width="41" height="41">
-                    </i>
-                  </li>
-                  <li class="new-circle">
-                    <ul class="circle circle--s ">
-                      <li class="circle__items" data-src="./img/logo-crypto-halal-academy.png"
-                        data-ref="https://ummaprojects.com/3" data-title="Академия CRYPTO HALAL">
-                        <div class="circle__info">
-                          "Crypto Halal" – проект, который создан, чтобы помочь мусульманам работать на рынке
-                          криптовалют
-                          согласно принципам шариата.
-
-                        </div>
-                        <i class="circle__img">
-                          <img src="./img/logo-crypto-halal-academy.png" alt="Crypto Halal Academy logo" width="62"
-                            height="62">
-                        </i>
-                      </li>
-                      <li class="circle__items" data-src="./img/logo-unlimhosting.png"
-                        data-ref="https://ummaprojects.com/2" data-title="Unlimhosting">
-                        <div class="circle__info">
-                          Цель компании Unlimhosting заключается в предоставлении доступного и эффективного
-                          размещения ваших проектов в интернете. Благодаря многолетнему опыту в области Хостинга мы
-                          знаем как удовлетворить все потребности наших клиентов. Услуги и сервисы Unlimhosting всегда
-                          совершенствуются для создания положительного опыта в использовании серверов для всех
-                          пользователей.
-
-                        </div>
-                        <i class="circle__img">
-                          <img src="./img/logo-unlimhosting.png" alt="Unlimhosting logo" width="44" height="32">
-                        </i>
-                      </li>
-                      <li class="circle__items" data-src="./img/logo-muslims-quiz.png"
-                        data-ref="https://ummaprojects.com/1" data-title="Исламские Викторины">
-                        <div class="circle__info">
-                          <a href="" class="circle__link"></a>
-                        </div>
-                        <i class="circle__img">
-                          <img src="./img/logo-muslims-quiz.png" alt="Muslim quiz logo" width="64" height="64">
-                        </i>
-                      </li>
-                      <li class="new-circle">
-                        <ul class="circle circle--xs ">
-                          <li class="circle__items circle__items--main" data-src="./img/logo-umma.svg"
-                            data-ref="https://ummaprojects.com/" data-title="Umma Nikah - брачное агентство для
-                            мусульман">
-                            <div class="circle__info">
-                              Исламская социальная сеть Umma Life. Одна умма - одна сеть!
-                              Создание социальной сети Umma Life - это реакция на потребности в сфере
-                              интернет-технологий
-                              мусульман и всех приверженцев традиционных ценностей.
-                            </div>
-                            <i class="circle__img">
-                              <img src="./img/logo-umma.svg" alt="Umma logo" width="38" height="41">
-                            </i>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <li class="list__items" data-src="./img/logo-how-i-accept.png" data-ref="https://t.me/ConvToIslam"
+            data-title="How I accept">
+            <div class="list__info">
+              Самые разные трогательные, интересные и завораживающие истории наших братьев и сестёр мусульман о том, как
+              они приняли прекрасную религию Ислам.
+            </div>
+            <i class="list__img">
+              <img src="./img/logo-how-i-accept.png" alt="How i accept Muslim logo" width="61" height="61">
+            </i>
           </li>
+          <li class="list__items" data-src="./img/logo-Umma-Studio.png" data-ref="https://umma.studio"
+            data-title="UMMA STUDIO">
+            <div class="list__info">
+              Видео продакшн студия UMMA STUDIO.
+            </div>
+            <i class="list__img">
+              <img src="./img/logo-Umma-Studio.png" alt="Umma Studio logo" width="61" height="61">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-creater.png" data-ref="https://t.me/CreationOfAllah"
+            data-title="Создания Аллаха">
+            <div class="list__info">
+              Мы познакомим тебя с богатым миром животных и расскажем удивительные факты о них.
+            </div>
+            <i class="list__img">
+              <img src="./img/logo-creater.png" alt="Creater logo" width="61" height="61">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-Crypto-Halal.png" data-ref="https://t.me/cryptohalal_ru"
+            data-title="Crypto Halal">
+            <div class="list__info">
+              "Crypto Halal" – проект, который создан, чтобы помочь мусульманам работать на рынке криптовалют согласно
+              принципам шариата.
+
+              Описание принципов работы разных криптовалют и блокчейнов и хукм взаимодействия с ними.
+            </div>
+            <i class="list__img list__img--bg-default">
+              <img src="./img/logo-Crypto-Halal.png" alt="Crypto Halal logo" width="40" height="41">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-crypto-halal-academy.png"
+            data-ref="https://academy.cryptohalal.ru" data-title="Академия CRYPTO HALAL">
+            <div class="list__info">
+              Академия CRYPTO HALAL обучает мусульман: р2р, арбитражу, скальпингу, смарт мани трейдингу; финансовой
+              грамотности - детей/подростков.
+
+            </div>
+            <i class="list__img">
+              <img src="./img/logo-crypto-halal-academy.png" alt="Crypto Halal Academy logo" width="62" height="62">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-unlimhosting.png" data-ref="https://unlimhosting.com/"
+            data-title="Unlimhosting">
+            <div class="list__info">
+              Цель компании Unlimhosting.com заключается в предоставлении доступного и эффективного размещения ваших
+              проектов в интернете. Благодаря многолетнему опыту в области Хостинга мы знаем как удовлетворить все
+              потребности наших клиентов. Услуги и сервисы Unlimhosting всегда совершенствуются для создания
+              положительного опыта в использовании серверов для всех пользователей.
+            </div>
+            <i class="list__img list__img--bg-default">
+              <img src="./img/logo-unlimhosting.png" alt="Unlimhosting logo" width="44" height="32">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-muslims-quiz.png" data-ref="https://t.me/ummaq_bot"
+            data-title="Исламские Викторины">
+            <div class="list__info">
+              Увлекательные исламские викторины. (Telegram бот)
+            </div>
+            <i class="list__img">
+              <img src="./img/logo-muslims-quiz.png" alt="Muslim quiz logo" width="64" height="64">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-umma.svg" data-ref="https://nikah.ummalife.com"
+            data-title="Umma Nikah - брачное агентство для мусульман">
+            <div class="list__info">
+              Umma Nikah - брачное агентство для мусульман
+            </div>
+            <i class="list__img list__img--bg-default">
+              <img src="./img/logo-umma.svg" alt="Umma logo" width="38" height="41">
+            </i>
+          </li>
+
+          <li class="list__items" data-src="./img/logo-Crypto-Halal.png" data-ref="https://t.me/cryptohalal_bot"
+            data-title="Crypto Halal">
+            <div class="list__info">
+              Бот проверяет на дозволенность или запретность использования криптовалюты.
+            </div>
+            <i class="list__img list__img--bg-default">
+              <img src="./img/logo-Crypto-Halal.png" alt="Crypto Halal logo" width="40" height="41">
+            </i>
+          </li>
+
+          <li class="list__items list__items--main" data-src="./img/main-logo.png" data-ref="https://ummalife.com"
+            data-title="Umma Life">
+            <div class="list__info">
+              Исламская социальная сеть Umma Life. Одна умма - одна сеть!
+              Создание социальной сети Umma Life - это реакция на потребности в сфере интернет-технологий мусульман и
+              всех приверженцев традиционных ценностей.
+            </div>
+            <i class="list__img">
+              <img src="./img/main-logo.png" alt="Muslim social network" width="173" height="173">
+            </i>
+          </li>
+
         </ul>
-
       </div>
 
-
-
-      <div class="holder">
-
-        <div class="holder-icon holder-icon-01">
-          <i class="disk-01 _center"></i>
-          <img src="./img/logo-muslim-IT-community.png" alt="Muslim IT Community" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-02">
-          <i class="disk-01 _center"></i>
-          <img src="./img/logo-muslim-IT-community.png" alt="UltaVPN logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-03">
-          <i class="disk-02 _center"></i>
-          <img src="./img/logo-Al-Fatiha.png" alt="Al Fatiha logo" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-04">
-          <i class="disk-02 _center"></i>
-          <img src="./img/logo-umma-pic.png" alt="Umma in picture logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-05">
-          <i class="disk-03 _center"></i>
-          <img src="./img/logo-Muslim-cartoon.png" alt="Muslim cartoon" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-06">
-          <i class="disk-03 _center"></i>
-          <img src="./img/logo-how-i-accept.png" alt="How i accept Muslim logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-07">
-          <i class="disk-04 _center"></i>
-          <img src="./img/logo-Umma-Studio.png" alt="Muslim cartoon" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-08">
-          <i class="disk-04 _center"></i>
-          <img src="./img/logo-creater.png" alt="How i accept Muslim logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-09">
-          <i class="disk-05 _center"></i>
-          <img src="./img/logo-Crypto-Halal.png" alt="Muslim cartoon" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-10">
-          <i class="disk-05 _center"></i>
-          <img src="./img/logo-crypto-halal-academy.png" alt="How i accept Muslim logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-11">
-          <i class="disk-06 _center"></i>
-          <img src="./img/logo-Al-Fatiha.png" alt="Al Fatiha logo" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-12">
-          <i class="disk-06 _center"></i>
-          <img src="./img/logo-umma-pic.png" alt="Umma in picture logo" width="61" height="61">
-        </div>
-
-        <div class="holder-icon holder-icon-13">
-          <i class="disk-07 _center"></i>
-          <img src="./img/logo-Al-Fatiha.png" alt="Al Fatiha logo" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-14">
-          <i class="disk-07 _center"></i>
-          <img src="./img/logo-umma-pic.png" alt="Umma in picture logo" width="61" height="61">
-        </div>
-
-
-        <div class="holder-icon holder-icon-15">
-          <i class="disk-08 _center"></i>
-          <img src="./img/logo-Al-Fatiha.png" alt="Al Fatiha logo" width="61" height="61">
-        </div>
-        <div class="holder-icon holder-icon-16">
-          <i class="disk-08 _center"></i>
-          <img src="./img/logo-umma-pic.png" alt="Umma in picture logo" width="61" height="61">
-        </div>
-      </div>
 
       <div class="descr-modal" id="modal">
         <button type="button" class="descr-modal__close" id="modalBtnClose"></button>
@@ -319,7 +237,6 @@
 
 
     </main>
-    <!-- //= layout/_footer.html -->
   </div>
 
   <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript
@@ -329,7 +246,8 @@
   <script>
     window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')
   </script>
-  <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script src="js/main.min.js"></script>
 
 
